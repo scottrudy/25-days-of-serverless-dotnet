@@ -49,3 +49,11 @@ Chat integration for a chat service that lets you schedule tasks using natural l
 ### Solution
 
 Azure HTTP triggered function with calls to Azure Cognitive Services LUIS.
+
+## [Day 7 - Picture Challenge](./day06/README.md)
+
+A web API that lets you search for images of things you want to get rid of. The application (e.g. a cloud function with a single endpoint) takes text as an input and returns an image found on unsplash or another image platform.
+
+### Solution
+
+Azure HTTP triggered function with search API call to [Unsplash](https://api.unsplash.com) that redirects to the first image hit.
