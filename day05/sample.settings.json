@@ -1,0 +1,10 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "TRANSLATOR_TEXT_SUBSCRIPTION_KEY": "{your_key}",
+        "TEXT_ANALYTICS_URL": "https://{your_instance}.cognitiveservices.azure.com/text/analytics/v2.1/sentiment",
+        "TEXT_ANALYTICS_SUBSCRIPTION_KEY": "{your_key}"
+    }
+}

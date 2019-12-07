@@ -1,0 +1,2 @@
+# Override root ignore of Azure Functions localsettings file
+!local.settings.json
