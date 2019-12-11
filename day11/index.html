@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enter your wish</title>
+        <style>
+            .container { padding-top: 10px; width: 508px; }
+            label { display: inline-block; width: 200px; }
+            input[type=text] { width: 300px; }
+            input[type=submit] { float: right; }
+        </style>
+    </head>
+    <body>
+        <H1>Enter your wish!</H1>
+        <form id="wishForm" action="api/wish" method="post">
+            <div class="container">
+                <label for="Name">Who wants the wish: </label>
+                <input type="text" name="Name" id="Name" required>
+            </div>
+            <div class="container">
+                <label for="Address">Where should it be delivered: </label>
+                <input type="text" name="Address" id="Address" required>
+            </div>
+            <div class="container">
+                <label for="WishType">Category of the wish: </label>
+                <input type="text" name="WishType" id="WishType" required>
+            </div>
+            <div class="container">
+                <label for="Description">Wish description: </label>
+                <input type="text" name="Description" id="Description" required>
+            </div>
+            <div class="container">
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>

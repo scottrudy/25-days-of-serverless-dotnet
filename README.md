@@ -82,3 +82,12 @@ A tool that finds deals of the day from Twitter and adds them to a static web pa
 
 Azure time triggered function with API call to [Twitter API](https://api.twitter.com) using [Tweetinvi](https://github.com/linvi/tweetinvi). Also used input/output bindings only to find that table storage doesn't support LINQ in .net core and the blob binding doesn't support container names that begin with a `$`, like `$web`.
 
+## [Day 11 - Database Trigger](./day11/README.md)
+
+a system that takes in childrens' requests and stores them for later processing. Additionally, a notification is sent every time a new gift wish arrives.
+
+Bonus: A webpage with a form that submits data in the previous format!
+
+### Solution
+
+Azure Functions using .Net Core 3.1 with C#. HTTP triggered functions leveraging output bindings using Azure Queue Storage. A queue storage triggered function that saves the message to Azure Table Storage and sends a message to Teams when a new row is added.
