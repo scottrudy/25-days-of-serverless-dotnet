@@ -57,3 +57,28 @@ A web API that lets you search for images of things you want to get rid of. The 
 ### Solution
 
 Azure HTTP triggered function with search API call to [Unsplash](https://api.unsplash.com) that redirects to the first image hit.
+
+## [Day 8 - Incident Status](./day08/README.md)
+
+A simple solution that helps inform elves and helpers all over the world when there is a problem with Santa's Reindeer Guidance System.
+
+### Solution
+
+N/A
+
+## [Day 9 - Thank you to Github issue creators](./day09/README.md)
+
+Say thank you to everyone who takes the time to create an issue in your Github repository, using serverless technology.
+
+### Solution
+
+N/A
+
+## [Day 10 - Timer Trigger](./day10/README.md)
+
+A tool that finds deals of the day from Twitter and adds them to a static web page.
+
+### Solution
+
+Azure time triggered function with API call to [Twitter API](https://api.twitter.com) using [Tweetinvi](https://github.com/linvi/tweetinvi). Also used input/output bindings only to find that table storage doesn't support LINQ in .net core and the blob binding doesn't support container names that begin with a `$`, like `$web`.
+
