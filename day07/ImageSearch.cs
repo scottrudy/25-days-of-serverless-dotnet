@@ -14,7 +14,7 @@ namespace day07
         [FunctionName(nameof(SearchImages))]
         public static async Task<IActionResult> SearchImages([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req) {
             string text = req.Query["text"];
-            if (text == null) { new BadRequestObjectResult("Please pass a value to {text} on the query string"); }
+            if (text == null) { return new BadRequestObjectResult("Please pass a value to {text} on the query string"); }
 
             var result = await SearchForImage(text).ConfigureAwait(false);
             return new RedirectResult(result, false);
